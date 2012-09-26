@@ -61,7 +61,7 @@ class TurmasController < ApplicationController
   def update
     params[:turma][:aluno_ids] ||= []
     @turma = Turma.find(params[:id])
-    params[:turma][:aluno_ids] ||= []
+   
     
 #
     respond_to do |format|

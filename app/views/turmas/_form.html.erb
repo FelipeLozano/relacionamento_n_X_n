@@ -17,7 +17,7 @@
   </div>
 	<div class="field">
     <% @alunotodo.each do |c|%>
-	<%= check_box_tag "turma[aluno_ids][]",c.id%>
+	<%= check_box_tag "turma[aluno_ids][]",c.id, @turma.alunos.include?(c)%>
 	<%= c.nome%><%= c.idade%>
 	<% end %>
   </div>
