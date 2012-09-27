@@ -3,6 +3,12 @@
 <p>
   <b>Nometurma:</b>
   <%= @turma.nomeTurma %>
+  <b>Alunos</b>
+  <ul>
+  <% @turma.alunos.each do |aluno| %>
+    <li><%= aluno.nome %></li>
+  <% end %>
+  </ul>
 </p>
 
 
